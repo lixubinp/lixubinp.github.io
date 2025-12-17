@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xubin Li, PhD – Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #0f6abf;
+      --accent-soft: #e6f1fb;
+      --text-main: #222;
+      --text-muted: #555;
+      --bg: #ffffff;
+      --border: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .site-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 3px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.7rem;
+    }
+
+    /* h2 {
+      margin-top: 28px;
+      margin-bottom: 6px;
+      font-size: 1.2rem;
+    } */
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      color: #0f6abf;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .lead {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 20px;
+    }
+
+    .section-block {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 18px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+      margin-top: 18px;
+    }
+
+    .section-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section-icon {
+      flex: 0 0 120px;
+      text-align: center;
+    }
+
+    .section-icon img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section-content {
+      flex: 1;
+      font-size: 0.97rem;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 3px;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+      .section-block,
+      .section-block.reverse {
+        flex-direction: column;
+      }
+      .section-icon {
+        flex: 0 0 auto;
+        text-align: left;
+        max-width: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <!-- <div class="site-title">Li Lab</div> -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="future.html">Future</a>
+        <a href="publications.html">Publications</a>
+        <a href="code.html">Code</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Selected Projects</h1>
+
+      <h2>Tumor Microenvironment &amp; Lymphoma Biology</h2>
+
+      <div class="section-block">
+        <div class="section-content">
+          <h3>LymphoMAP (Li et al. <i>Cancer Cell</i> 2025)</h3>
+          <ul>
+            <li>
+              Single cell atlas of large B-cell lymphoma defines 3 lymphoma microenvironment archetype profiles (LymphoMAPs):
+              <ul>
+                <li>FMAC: cancer-associated fibroblasts and tumor-associated macrophages with low T cell infiltration</li>
+                <li>LN: lymph node architectural cell types with naive and memory T cells</li>
+                <li>TEX: activated macrophages and exhausted CD8+ T cells</li>
+              </ul>
+            </li>
+            <li>LymphoMAPs are associated with outcome to 1L R-chemo and 2L+ CAR T-cell therapy.</li>
+            <li>Each LymphoMAP has targetable biology.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_LymphoMAP.png" 
+              alt="proj_summary_LymphoMAP"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+      
+      <h2>CAR T Cell Therapy</h2>
+      
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Single Cell Atlas of CAR T Cells (Li et al. <i>Cancer Cell</i> 2023)</h3>
+          <ul>
+            <li>A resource of single-cell data from the CD19 CAR T-cell infusion products.</li>
+            <li>Clustering identified CD8+ and CD4+ T cells, and previously reported ICANS-associated cells (IACs).</li>
+            <li>Cells from non-responders had significantly higher expression of cytokine signaling genes.</li>
+            <li>Cells from responders had significantly higher expression of glycolysis pathway genes.</li>
+            <li>Metabolic fitness supports effector function of CAR T cells and underlies CAR T response.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_scAtlas_CART.png" 
+              alt="proj_summary_scAtlas_CART"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Prolonged Cytopenia Following CAR T-Cell Therapy (Strati, Li, Deng et al. <i>Cell Reports Medicine</i> 2023)</h3>
+          <ul>
+            <li>Prolonged cytopenia (PC) is associated with inferior outcomes following CAR T-cell therapy.</li>
+            <li>Bone marrow from CAR T patients with PC have significantly higher frequencies of clonally-expanded CX3CR1hi cytotoxic CD8 T cells expressing IFNγ.</li>
+            <li>Hematopoietic stem cells from CAR T patients with PC bear signatures of IFNγ response.</li>
+            <li>Cells from responders had significantly higher expression of glycolysis pathway genes.</li>
+            <li>This has led to a clinical trial evaluating emapalumab, an anti–IFN-γ antibody, for treating CAR T-associated prolonged cytopenia (NCT06285825).</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_cytopenia.png" 
+              alt="proj_summary_cytopenia"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+
+      <h2>Bioinformatics &amp; Pan-Cancer Genomics</h2>
+
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Recurrent Composite Markers of Cell Types and States (Li et al. <i>bioRxiv</i> 2023)</h3>
+          <ul>
+            <li>RECOMBINE (Recurrent Composite Markers for Biological Identities with Neighborhood Enrichment) is a novel statistical learning framework to identify optimized, composite marker sets that distinguish hierarchical cell subpopulations.</li>
+            <li>Validation using both simulated and biological datasets demonstrates that RECOMBINE is robust to hyperparameter variation and data sparsity, and achieves higher accuracy in identifying discriminative markers compared to existing approaches.</li>
+            <li>RECOMBINE is particularly powerful for datasets characterized by continuous cell-state transitions, where defining discrete boundaries is inappropriate.</li>
+            <li>RECOMBINE identifies key cell type markers and generates robust gene panels for targeted spatial profiling.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_recombine.png" 
+              alt="proj_summary_recombine"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Precision Combination Therapy Selection (Li et al. <i>Cancer Discovery</i> 2022)</h3>
+          <ul>
+            <li>REFLECT (REcurrent Features LEveraged for Combination Therapy) is a machine learning framework to detect oncogenic co-alterations from multi-omics data.</li>
+            <li>REFLECT maps recurrent co-alteration signatures in patient cohorts to combination therapies.</li>
+            <li>REFLECT-predicted combination drugs were validated by data from PDXs, in vitro drug screens, and a combination therapy clinical trial.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_reflect.png" 
+              alt="proj_summary_reflect"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+
+      <h2>Biophysics</h2>
+      
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Gaussian Kernel Monte Carlo Resampling Method (Li et al. <i>Journal of Chemical Physics</i> 2025)</h3>
+          <ul>
+            <li>Gaussian kernel Monte Carlo (GKMC) resampling is a robust approach for high-quality free energy surface construction.</li>
+            <li>The target free energy surface is mapped as the sum of local Gaussian basis functions; the height of each Gaussian basis function is recursively obtained through MC resampling of the simulation data.</li>
+            <li>The smooth free energy surfaces accurately represent simulated probability distributions.</li>
+            <li>Because the data noise is effectively removed, the local free-energy features are constructed much more accurately and informatively.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_gkmc.png" 
+              alt="proj_summary_gkmc"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Generalized Orthogonal Space Tempering Method (Lu, Li et al. <i>Journal of Chemical Theory and Computation</i> 2016)</h3>
+          <ul>
+            <li>
+              Generalized orthogonal space tempering is a physics-based sampling method for synchronous acceleration of molecular fluctuations associated with both protein conformational changes and slow environment responses.
+              <ul>
+                <li>In the Hamiltonian perturbation part, a solvent-accessible-surface- area-dependent term is introduced to implicitly perturb near-solute water−water fluctuations.</li>
+                <li>In the orthogonal space response part, the generalized force order parameter comprises a two-dimension order parameter set, in which essential solute−solvent and solute−solute components are separately treated.</li>
+              </ul>
+            </li>
+            <li>With a fully automated sampling protocol, the method enabled repetitive folding and unfolding of the solvated peptide within a single continuous trajectory and allowed for detailed constructions of deca-alanine folding/unfolding free energy surfaces.</li>
+            <li>Our assessment analysis suggests that protein conformational changes are driven by the compensating and cooperative fluctuations of protein internal and protein−water interactions.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_genost.png" 
+              alt="proj_summary_genost.png"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- <footer>
+      © <span id="year"></span> Li Lab
+    </footer> -->
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
